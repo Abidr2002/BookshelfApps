@@ -127,29 +127,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const yearInput = elements.yearInput;
     const isCompleteInput = elements.isCompleteInput;
 
-    deleteButton.addEventListener("click", function () {
-      const bookId = this.getAttribute("data-book-id"); // Dapatkan ID buku dari atribut data
-      const confirmDelete = confirm(
-        "Apakah Anda yakin ingin menghapus buku ini?"
-      ); // Tampilkan modal konfirmasi
-      if (confirmDelete) {
-        deleteBook(bookId); // Hapus buku jika pengguna mengonfirmasi
-      }
-    });
-
-    const checkbox = document.getElementById("inputBookIsComplete");
-    const span = document.getElementById("submitSpan");
-
-    // Tambahkan event listener untuk memantau perubahan pada checkbox
-    checkbox.addEventListener("change", function () {
-      // Jika checkbox dicentang, ubah teks di dalam span
-      if (this.checked) {
-        span.innerText = "Selesai dibaca";
-      } else {
-        span.innerText = "Belum selesai dibaca";
-      }
-    });
-
     form.addEventListener("submit", function (event) {
       event.preventDefault();
 
