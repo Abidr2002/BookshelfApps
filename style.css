@@ -39,16 +39,16 @@ main {
   border-radius: 10px;
 }
 
-.input_section > h2 {
+.input_section h2 {
   text-align: center;
   color: cornflowerblue;
 }
 
-.input_section > form > .input {
+.input {
   margin: 8px 0;
 }
 
-.input_section > form > button {
+.input_section button {
   background-color: cornflowerblue;
   color: white;
   border: 0;
@@ -59,29 +59,29 @@ main {
   cursor: pointer;
 }
 
-.input_section > form > button > span {
+.input_section span {
   font-weight: bold;
 }
 
-.input_section > form > .input > input {
+.input input {
   display: block;
   width: 100%;
   padding: 8px;
   border-radius: 5px;
 }
 
-.input_section > form > .input > label {
+.input label {
   color: cornflowerblue;
   font-weight: bold;
 }
 
-.input_section > form > .input_inline {
+.input_inline {
   margin: 12px 0;
   display: flex;
   align-items: center;
 }
 
-.input_section > form > .input_inline > label {
+.input_inline label {
   color: cornflowerblue;
   font-weight: bold;
   margin-right: 10px;
@@ -97,11 +97,11 @@ main {
   border-radius: 10px;
 }
 
-.search_section > h2 {
+.search_section h2 {
   color: cornflowerblue;
 }
 
-.search_section > form {
+.search_section form {
   padding: 16px;
   width: 100%;
   display: grid;
@@ -109,17 +109,17 @@ main {
   grid-gap: 10px;
 }
 
-.search_section > form > label {
+.search_section label {
   display: flex;
   align-items: center;
 }
 
-.search_section > form > input {
+.search_section input {
   padding: 5px;
   border-radius: 5px;
 }
 
-.search_section > form > button {
+.search_section button {
   background-color: cornflowerblue;
   color: white;
   border: 0;
@@ -134,27 +134,27 @@ main {
   border-radius: 10px;
 }
 
-.book_shelf > h2 {
+.book_shelf h2 {
   color: cornflowerblue;
 }
 
-.book_shelf > .book_list {
+.book_list {
   padding: 16px;
 }
 
-.book_shelf > .book_list > .book_item {
+.book_item {
   padding: 8px 16px 16px 16px;
   border: 1px solid black;
   border-radius: 5px;
   margin: 10px 0;
 }
 
-.book_shelf > .book_list > .book_item > h3,
+.book_item h3,
 p {
   margin: 8px 0;
 }
 
-.book_shelf > .book_list > .book_item > .action > button {
+.action {
   border: 0;
   padding: 5px;
   margin: 0 5px 0 0;
@@ -162,12 +162,22 @@ p {
   cursor: pointer;
 }
 
-.book_shelf > .book_list > .book_item > .action > .green {
+.green {
   background-color: darkgreen;
   color: white;
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.book_shelf > .book_list > .book_item > .action > .red {
+.red {
   background-color: darkred;
   color: white;
+  border: 0;
+  padding: 5px;
+  margin: 0 5px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
 }
